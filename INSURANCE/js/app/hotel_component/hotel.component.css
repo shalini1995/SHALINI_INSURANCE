@@ -1,0 +1,88 @@
+#city-header
+{
+	color: #4A148C;
+  font-weight: bold;
+}
+.rating
+{
+	font-size:20px;
+}
+.hotel-image
+{
+	margin:10px;
+}
+#hotels
+{
+	color:#982f76;
+	font-weight: bold;
+}
+
+.hotel 
+{
+	color: #FFCCBC;
+	list-style-type: none;
+	text-decoration:none;
+	border-radius: 25px;
+	background-color:white;
+    border :  8px solid lightblue;
+    margin-top:15px;
+}
+.hotel a 
+{
+	color: purple;
+	font-weight: bold;
+	font-size: 30px;
+}
+.hotel span 
+{
+	margin-left: 50px;
+}
+.contact li
+{
+	list-style-type: none;
+	text-decoration:none;
+	font-size: 20px;
+	color: blue;
+}
+.rating li
+{
+ display :inline;
+}
+video
+{
+	height: 300px;
+}
+.overlayer
+{
+
+  width: 100%;
+  min-height: 1200px;
+  z-index: 1;
+  opacity: 0.8;
+  background-color: white;
+  position: absolute;
+  top:0;
+}
+.pop_up
+{
+
+  width: 400px;
+  min-height: 142px;
+  z-index: 1;
+  background-color: grey;
+  position: absolute;
+  top:20%;
+  left:35%;
+  border:2px solid purple;
+}
+#closeBut
+{
+  margin-left: 318px;
+  margin-top: -38px;
+}
+.pop_up p
+{
+  text-align:center;
+  font-size: 25px;
+  color: purple;
+}

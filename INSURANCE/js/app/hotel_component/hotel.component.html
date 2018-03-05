@@ -1,0 +1,27 @@
+<section class="hotel-container">
+   <article class="row">
+              <video class="alignment large-12 large-centered column" autoplay="" preload="auto" poster="https://www.dorchestercollection.com/wp-content/plugins/vc-chrisrenga-dc-elements/assets/hotel-eden-refurbishment.jpg"  src="http://content.photowebusa.com/dusit/bangkok/__videos/video.mp4" type="video/mp4">
+              </video>  
+          </article> 
+   <section class="row" *ngFor="let b of booked">
+      <section class="large-8 large-centered column">
+            <h3 id="city-header" class="large-8 large-centered column city-text">Welcome to {{b.cityname}}</h3>
+            <h3 id="hotels">Top Insurances in {{b.cityname}}</h3>
+            <select class="city large-centered column" name="select city" [(ngModel)]="insurance" (click)="onSelect($event , insurance)">
+                <option value="{{b.insurance_one}}">{{b.insurance_one}}</option>
+                <option value="{{b.insurance_two}}">{{b.insurance_two}}</option>
+                <option value="{{b.insurance_three}}">{{b.insurance_three}}</option>
+            </select>
+            <div class="large-7 large-centered column"><button class="button" (click)="onLoad()">Make Payment</button></div>
+      </section> 
+   </section> 
+    <!-- <div class="large-7 large-centered column"><button class="button" (click)="onLoad()">Make Payment</button></div> -->
+
+       <section class="overlayer" *ngIf="showlayer" [hidden]="hiddenlayer"></section>
+            <section class="pop_up"  *ngIf="showpopup" [hidden]="hiddenpopup"> 
+              <p>Thanks for Taking {{insurance}} Insurance with our Bank!!!</p>
+              <p>Have a nice day!</p>
+              <img src="images/micky.png">
+              <button id="closeBut" class="button" (click)="onPop()">close</button>
+            </section>
+</section>

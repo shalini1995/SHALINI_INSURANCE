@@ -1,0 +1,21 @@
+
+<section class="sign-up row">
+        <section class="small-6 large-6 small-centered column" data-abide>
+         <h1 class="sign-text">New User can Register Here!!!</h1>
+	    	 <label class="label-text">Enter Mobile Number
+	            <input type="text" autocomplete="off" required pattern="[0-9]+" [(ngModel)] = "Regnum" placeholder="Enter your mobile number">
+	         </label>
+	         <label class="label-text">Enter Password
+	            <input type="password" autocomplete="off" required pattern="[a-zA-Z]+" [(ngModel)] = "Regpass" placeholder="Enter your password" ata-tooltip class="tip-right" title="password should contain atleast one number and one special character and length should be greater than 6">
+	         </label>
+	         <label class="label-text">Re-enter Password
+	            <input type="password" autocomplete="off" required pattern="[a-zA-Z]+" [(ngModel)] = "Regpwd" placeholder="Re-enter your password" id="pwd">
+	         </label>
+	         <nav>
+	             <!-- <button class="button" (click) = "Retrive(Regnum,Regpwd)">submit</button> -->
+		         <!-- <a routerLink="/"> --><button class="button" (click) = "Retrive(Regnum,Regpwd)">Register</button><!-- </a> -->
+		     </nav>
+        </section>   
+	</section>
+	<!-- destination router content appears here -->
+	<router-outlet></router-outlet>

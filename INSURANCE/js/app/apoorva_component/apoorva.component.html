@@ -1,0 +1,67 @@
+
+<section class="hotel-container row" *ngFor="let b of booked">
+         <h2 id="hotel-header" class="large-8 large-centered column city-text">Welcome to <span class="blink">{{b.hotelname}}</span></h2>
+         <article class="row">
+              <video class="alignment large-12 large-centered column" autoplay="" preload="auto" poster="https://www.dorchestercollection.com/wp-content/plugins/vc-chrisrenga-dc-elements/assets/hotel-eden-refurbishment.jpg"  src={{b.video}} type="video/mp4">
+              </video>  
+          </article> 
+          <section class="large-8 large-centered column">       
+                  <table>
+                          <thead>
+                            <tr>
+                              <th width="200">Rooms</th>
+                              <th>Availability</th>
+                              <th width="150">Cost(per day)</th>
+                              <th width="150">Book your rooms</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Single a/c</td>
+                              <td>{{b.singleacavail}}</td>
+                              <td class="cost">Rs.{{b.singleaccost}}</td>
+                              <td><!-- <form id="form_add" data-abide method="post" action="Posturl"> --><input type="text" class="roomCount" id="singleacavail"></td>
+                            </tr>
+                            <tr>
+                              <td>Single non a/c</td>
+                              <td>{{b.singlenonacavail}}</td>
+                              <td class="cost">Rs.{{b.singlenonaccost}}</td>
+                              <td><input type="text" class="roomCount" id="singlenonacavail"></td>
+                            </tr>
+                            <tr>
+                              <td>Double a/c</td>
+                              <td>{{b.doubleacavail}}</td>
+                              <td class="cost">Rs.{{b.doubleaccost}}</td>
+                              <td><input type="text" class="roomCount" id="doubleacavail"></td>
+                            </tr>
+                            <tr>
+                              <td>Double non a/c</td>
+                              <td>{{b.doublenonacavail}}</td>
+                              <td class="cost">Rs.{{b.doublenonaccost}}</td>
+                              <td><input type="text" class="roomCount" id="doublenonacavail"></td>
+                            </tr>
+                            <tr>
+                               <td>TotalAmount</td>
+                               <td class="totalAmount"></td>
+                               <td></td>
+                               <td></td>
+                            </tr>
+                          </tbody>
+                    </table>
+          </section>              
+            <aside class="large-7 large-centered column">
+                 <button class="button" (click)="onDirect()">Get price</button>
+                 <button class="button" (click)="onLoad()">Book</button>
+            </aside>
+            
+
+            <section class="overlayer" *ngIf="showlayer" [hidden]="hiddenlayer"></section>
+            <section class="pop_up"  *ngIf="showpopup" [hidden]="hiddenpopup"> 
+              <p>Thanks for Booking!</p>
+              <p>Have a nice day!</p>
+              <img src="images/micky.png">
+              <button id="closeBut" class="button" (click)="onPop()">close</button>
+            </section>
+  
+
+</section>

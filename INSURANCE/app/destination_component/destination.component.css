@@ -1,0 +1,46 @@
+.design
+{
+	border-radius: 0%;
+	width: 50px;
+	height: 3px;
+}
+.searching
+{
+	background-color: transparent;
+    min-height: 50px;
+}
+.orbit-previous
+{
+	background-color: #EF5350;
+}
+.orbit-next
+{
+	background-color: #EF5350;
+}
+.orbit-bullets button.is-active
+{
+	background-color: #EF5350;
+}
+.orbit-image,.slider-image
+{
+	min-height:350px;
+}
+#vid1
+{
+	width:1165px;
+	height:400px;
+}
+select
+{
+	margin-top:20px;
+}
+.city-text
+{
+    color:#00ffd7;
+	font-size:20px;
+	font-weight: bold;
+}
+#bank
+{
+	color: #004D40;
+}

@@ -1,0 +1,51 @@
+.wrapper
+{
+	background-color: #1DE9B6;
+	/*background-image:url(../images/myLogo.png);*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100%;
+}
+.top-bar, .menu
+{
+	background-color:transparent;
+}
+.text a:hover
+{
+	border-radius: 15px;
+	padding:20px;
+	color:white;
+	background-color:#536dfe; 
+}
+.dropdown.menu
+{
+	border-color:none;
+}
+.sub-menu
+{
+	color:white;
+}
+/*.copy-right span
+{
+	float: left;
+}
+.contact li
+{
+	float:right;
+	padding-right: 5px;
+	text-decoration: none;
+	list-style-type: none;
+}*/
+.heading
+{
+	font-size: 40px;
+	font-weight: bold;
+	color: purple;
+	text-align: center;
+}
+.heading span
+{
+    font-size: 60px;
+	font-weight: bold;
+	color: blue;
+}
